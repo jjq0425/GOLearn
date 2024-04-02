@@ -14,12 +14,24 @@ func VAR() {
 	name2 := "hello world2"
 	fmt.Println(name, name2)
 
+	// 更简洁，和js一样
+	var v_name = true
+	fmt.Println(v_name) // 自动推断
+
 	const (
 		a1 = 1
 		a2 // 这里将会自动沿用上面的值,即a2还是1
 
 	)
 	fmt.Println(a1, a2)
+
+	// 一次声明多个变量
+	var b1, c1 int = 1, 2
+	fmt.Println(b1, c1) // 1，2
+
+	// const
+	const identifier string = "hello" // 带有类型
+	const identifier2 = "hello"       // 自动推导
 
 	/**iota**/
 	// iota是一个内置的自增长变量，每次定义会进行一次自增
