@@ -32,7 +32,7 @@ func (c Circle) area() float64 {
 }
 
 func main() {
-	var s Shape
+	var s Shape //s是一个接口！
 
 	s = Rectangle{width: 10, height: 5}
 	fmt.Printf("矩形面积: %f\n", s.area()) // 会自动调用对应的area函数
